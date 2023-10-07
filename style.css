@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+:root {
+  --clr-bg: #0f0f0f;
+  --clr-txt: #f0f0f0;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  background: var(--clr-bg);
+  height: 60px;
+  line-height: 45px;
+  padding-top: 8px;
+  border-bottom: 1px solid gray;
+}
+
+.menu ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+.menu ul li a {
+  margin-left: 20px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: var(--clr-txt);
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+}
+.menu ul li a:hover {
+  background: rgba(128, 128, 128, 0.6);
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul li ul {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  display: none;
+}
+
+.menu ul li ul li {
+  padding: 10px;
+  background: var(--clr-bg);
+  height: auto;
+  width: 100%;
+}
+
+.txts {
+  width: 100%;
+  height: 60px;
+  background: var(--clr-bg);
+}
+.txts h2 {
+  margin-left: 25px;
+  padding: 20px;
+  color: var(--clr-txt);
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background: var(--clr-bg);
+  justify-content: space-evenly;
+  border-bottom: 1px solid gray;
+}
+.items {
+  background: #2b2b2b;
+  width: 399.31px;
+  height: 224.61px;
+  border-radius: 10px;
+}
+.items img {
+  width: 399.31px;
+  height: 224.61px;
+  border-radius: 10px;
+}
+.gototop {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.gototop a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transform: rotate(30deg);
+  font-size: 20px;
+  margin: 5px 0 0 3px;
+}
+
+.gototop:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.gototop a:hover {
+  color: rgba(255, 255, 255);
+}
